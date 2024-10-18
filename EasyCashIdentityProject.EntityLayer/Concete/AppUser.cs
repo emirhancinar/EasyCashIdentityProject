@@ -14,5 +14,7 @@ namespace EasyCashIdentityProject.EntityLayer.Concete
         public string District { get; set; } // İlçe ya da Semt
         public string City { get; set; }
         public string ImageUrl { get; set; }
+        public List<CustomerAccount> CustomerAccounts { get; set; }
+
     }
 }
