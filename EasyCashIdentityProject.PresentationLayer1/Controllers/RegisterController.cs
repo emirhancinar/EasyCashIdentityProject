@@ -4,7 +4,6 @@ using EasyCashIdentityProject.EntityLayer.Concete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using MimeKit;
 using System.Net.Mail;
 using System.Net;
 

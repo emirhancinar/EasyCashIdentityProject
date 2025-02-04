@@ -1,0 +1,77 @@
+﻿@model LoginViewModel
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Cash Identity - Giriş Sayfası</title>
+    <link rel="shortcut icon" type="image/png" href="~/SEODash/SEODash-1.0.0/src/assets/images/logos/seodashlogo.png" />
+    <link rel="stylesheet" href="~/SEODash/SEODash-1.0.0/src/assets/css/styles.min.css" />
+</head>
+
+<body>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+         data-sidebar-position="fixed" data-header-position="fixed">
+        <div class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center w-100">
+                <div class="row justify-content-center w-100">
+                    <div class="col-md-8 col-lg-6 col-xxl-3 mb-5">
+                        <div class="card mb-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center">
+                                    <a href="~/SEODash/SEODash-1.0.0/src/html/index.html" class="text-nowrap logo-img d-flex align-items-center pt-2">
+                                        <img src="~/SEODash/SEODash-1.0.0/src/assets/images/logos/seodashlogo.png" alt="" style="height: 40px; margin-right: 8px;" />
+                                        <p class="ms-1 fs-8 my-3">Easy Cash</p>
+                                    </a>
+                                </div>
+                                <p class="text-center my-3">GİRİŞ YAP</p>
+                                
+                                <form method="post">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" asp-for="UserName" aria-describedby="textHelp" placeholder="Kullanıcı Adınız">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" asp-for="Password" aria-describedby="textHelp" placeholder="Şifreniz">
+                                    </div>
+
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input"  id="rememberMeCheckbox">
+                                        <label class="form-check-label" for="rememberMeCheckbox">Beni Hatırla</label>
+                                    </div>
+
+                                    <br /><br />
+
+                                    <input type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4" value="Giriş Yap">
+
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <p class="fs-4 mb-0 fw-bold">Bir Hesabınız yok mu?</p>
+                                        <a class="text-primary fw-bold ms-2" asp-controller="Register" asp-action="Index">Kayıt Ol</a>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="mt-5 text-center">
+                        <p>&copy; @DateTime.Now.Year Easy Cash Giriş Paneli. Tüm Hakları Saklıdır. | Design by <a href="" target="_blank"> Emirhan</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/SEODash/SEODash-1.0.0/src/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="~/SEODash/SEODash-1.0.0/src/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
+
+

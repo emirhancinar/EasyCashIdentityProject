@@ -25,9 +25,19 @@
                         <div class="card mb-0">
                             <div class="card-body">
                                 @* <a href="~/SEODash/SEODash-1.0.0/src/html/index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                                    <img src="~/SEODash/SEODash-1.0.0/src/assets/images/logos/logo-light.svg" alt="">
+                                    <img src="~/SEODash/SEODash-1.0.0/src/assets/images/logos/seodashlogo.png" alt="">
                                 </a> *@
-                                <p class="text-center">Yeni Müşteri</p>
+                                @* <a href="~/SEODash/SEODash-1.0.0/src/html/index.html" class="text-nowrap logo-img d-flex aling-items-center pt-2 ">
+                                    <img src="~/SEODash/SEODash-1.0.0/src/assets/images/logos/seodashlogo.png" alt="" style="height: 40px; margin-right: 8px;" />
+                                    <p class="ms-1 fs-8 my-2">Easy Cash</p>
+                                </a> *@
+                                <div class="d-flex justify-content-center">
+                                    <a href="~/SEODash/SEODash-1.0.0/src/html/index.html" class="text-nowrap logo-img d-flex align-items-center pt-2">
+                                        <img src="~/SEODash/SEODash-1.0.0/src/assets/images/logos/seodashlogo.png" alt="" style="height: 40px; margin-right: 8px;" />
+                                        <p class="ms-1 fs-8 my-3">Easy Cash</p>
+                                    </a>
+                                </div>
+                                <p class="text-center my-3">Yeni Müşteri</p>
                                 <form method="post">
                                     <div class="mb-3">
                                         <input type="text" class="form-control" asp-for="Name" aria-describedby="textHelp" placeholder="Adınız">
@@ -48,22 +58,12 @@
                                         <input type="password" class="form-control"  asp-for="ConfirmPassword" placeholder="Şifrenizi Tekrar Giriniz" required="">
                                     </div>
                                     <div asp-validation-summary="ModelOnly" class="mb-3 text-danger" ></div>
-                                    @* <div class="mb-4">
-                                        <input type="checkbox" class="form-control" id="brand1" value="">
-                                        <label for="brand1" ><span></span>Kullanım şartlarını okudum.</label>
-                                        <a href="/Login/Index/">Bir Hesabınız Var mı?</a>
-                                    </div>
-                                    <div class="mb-4">
-                                        <input type="submit" class="form-control" value="Kayıt Ol">
-                                        <p>Ana Sayfa Dön <span>=></span> <a class=""></a> Easy Cash</p>
-                                        <div class="clear"></div>
-                                    </div>
-                                    *@
+                                    
                                     <input type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4" value="Kayıt Ol">
 
                                     <div class="d-flex align-items-center justify-content-center">
                                         <p class="fs-4 mb-0 fw-bold">Bir Hesabınız Var mı?</p>
-                                        <a class="text-primary fw-bold ms-2" href="~/SEODash/SEODash-1.0.0/src/html/authentication-login.html">Sign In</a>
+                                        <a class="text-primary fw-bold ms-2" asp-controller="Login" asp-action="Index">Giriş Yap</a>
                                     </div>
                                 </form>
                             </div>
