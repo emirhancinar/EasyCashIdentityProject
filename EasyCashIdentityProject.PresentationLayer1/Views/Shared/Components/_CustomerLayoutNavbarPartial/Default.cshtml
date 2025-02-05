@@ -8,23 +8,79 @@
                     <i class="ti ti-menu-2"></i>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="ti ti-bell-ringing"></i>
                     <div class="notification bg-primary rounded-circle"></div>
                 </a>
+                <ul class="dropdown-menu dropdown-menu-start shadow-lg p-3 mb-5 bg-white rounded" aria-labelledby="notificationDropdown">
+                    <li><h6 class="dropdown-header text-muted">Bildirimler</h6></li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti ti-message-circle me-2 text-primary"></i> Yeni mesajınız var
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti ti-user-check me-2 text-success"></i> Profiliniz güncellendi
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti ti-users me-2 text-info"></i> Yeni takipçiniz var
+                        </a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item text-danger" href="#">
+                            <i class="ti ti-trash me-2"></i> Tümünü temizle
+                        </a>
+                    </li>
+                </ul>
             </li>
+
+            @* <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ti ti-bell-ringing"></i>
+                    <div class="notification bg-primary rounded-circle position-absolute top-0 end-0 translate-middle p-2">
+                        <span class="visually-hidden">New notifications</span>
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-start shadow-lg p-3 mb-5 bg-white rounded" aria-labelledby="notificationDropdown">
+                    <li><h6 class="dropdown-header text-muted">Bildirimler</h6></li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti ti-message-circle me-2 text-primary"></i> Yeni mesajınız var
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti ti-user-check me-2 text-success"></i> Profiliniz güncellendi
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <i class="ti ti-users me-2 text-info"></i> Yeni takipçiniz var
+                        </a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item text-danger" href="#">
+                            <i class="ti ti-trash me-2"></i> Tümünü temizle
+                        </a>
+                    </li>
+                </ul>
+            </li> *@
+
         </ul>
         <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-                <a href="#" target="_blank"
-                   class="btn btn-primary me-2"><span class="d-none d-md-block">Check Pro Version</span> <span class="d-block d-md-none">Pro</span></a>
-                <a href="#" target="_blank"
-                   class="btn btn-success"><span class="d-none d-md-block">Download Free </span> <span class="d-block d-md-none">Free</span></a>
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                        aria-expanded="false">
-                        <img src="~/SEODash/SEODash-1.0.0/src/assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                        <img src="~/image/user/pexels-olly-774909.jpg" alt="" width="35" height="35" class="rounded-circle">
                     </a>
                     <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                         <div class="message-body">

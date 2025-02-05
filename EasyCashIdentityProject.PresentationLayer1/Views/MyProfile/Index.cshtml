@@ -8,7 +8,7 @@
 @await Component.InvokeAsync("_CustomerLayoutHeaderPartial")
 
 <body>
-    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    <div class="page-wrapper d-flex flex-column vh-100" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
          data-sidebar-position="fixed" data-header-position="fixed">
 
         @await Component.InvokeAsync("_CustomerLayoutSidebarPartial")
@@ -17,19 +17,16 @@
             
             @await Component.InvokeAsync("_CustomerLayoutNavbarPartial")
 
-            <div class="container-fluid">
-                <div class="card">
-                    <div class="card-body">
-
+            <div class="container-fluid  d-flex flex-column" style="height: 92vh;">
+                <div class="card flex-grow-1 d-flex">
+                    <div class="card-body d-flex flex-column">
                         @RenderBody()
-
                     </div>
                 </div>
-                <div class="py-6 px-6 text-center">
-                    @await Component.InvokeAsync("_CustomerLayoutFooterPartial")
-                </div>
             </div>
+            @await Component.InvokeAsync("_CustomerLayoutFooterPartial")
         </div>
+
     </div>
     
     @await Component.InvokeAsync("_CustomerLayoutScriptPartial")
@@ -37,3 +34,4 @@
 </body>
 
 </html>
+
