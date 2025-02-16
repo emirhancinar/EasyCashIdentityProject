@@ -10,12 +10,13 @@ namespace EasyCashIdentityProject.EntityLayer.Concete
     {
         public int CustomerAccountID { get; set; }
         public string CustomerAccountNumber { get; set; }
-        public string Currency { get; set; } // Döviz Türü
+        public string CustomerAccountCurrency { get; set; } // Döviz Türü
         public decimal CustomerAccountBalance { get; set; }
-        public string MyProperty { get; set; }
         public string BankBranch { get; set; } // Banka Şubesi
         public int AppUserID { get; set; }
         public AppUser AppUser { get; set; }
+        public List<CustomerAccountProcess> CustomerSender {  get; set; }
+        public List<CustomerAccountProcess> CustomerReceiver { get; set; }
 
     }
 }

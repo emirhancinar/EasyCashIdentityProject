@@ -3,6 +3,7 @@
     Layout = null;
 }
 
+
 <!doctype html>
 <html lang="en">
 @await Component.InvokeAsync("_CustomerLayoutHeaderPartial")
@@ -17,18 +18,18 @@
             
             @await Component.InvokeAsync("_CustomerLayoutNavbarPartial")
 
-            <div class="container-fluid  d-flex flex-column" style="height: 92vh;">
+            <div class="container-fluid  d-flex flex-column" style="height: 100vh;">
                 <div class="card flex-grow-1 d-flex">
                     <div class="card-body d-flex flex-column">
                         @RenderBody()
                     </div>
                 </div>
             </div>
-            @await Component.InvokeAsync("_CustomerLayoutFooterPartial")
+            
         </div>
-
+        
     </div>
-    
+    @await Component.InvokeAsync("_CustomerLayoutFooterPartial")
     @await Component.InvokeAsync("_CustomerLayoutScriptPartial")
 
 </body>
