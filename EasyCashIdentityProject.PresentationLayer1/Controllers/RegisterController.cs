@@ -48,7 +48,7 @@ namespace EasyCashIdentityProject.PresentationLayer1.Controllers
 					SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
 					{
 						Port = 587, // Gmail için TLS portu
-						Credentials = new NetworkCredential("emirhancinar025@gmail.com", "imbp gswt kpus rzku"),
+						Credentials = new NetworkCredential("emirhancinar025@gmail.com", "xxxx xxxx xxxx xxxx"),
 						EnableSsl = true, // Güvenli bağlantı gerekiyorsa true yapın
 					};
 					// E-posta mesajını oluşturun
