@@ -1,0 +1,56 @@
+﻿@model SendMoneyForCustomerAccountProcessDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/MyProfile/Index.cshtml";
+}
+
+<div class="container mt-4">
+    <!-- Üst Kısım -->
+    <div class="d-flex justify-content-between align-items-center mt-1 mb-3">
+        <!-- Sol Üst: Arama Kutusu -->
+        <h4 class="text-primary">Easy Cash Para Transfer Sayfası</h4>
+
+        <!-- Sağ Üst: Panel Başlığı -->
+        <div class="input-group w-25 text-end">
+            <input type="text" class="form-control rounded-start" placeholder="Aranacak kelime giriniz">
+            <button class="btn btn-primary rounded-end">Ara</button>
+        </div>
+    </div>
+
+    <!-- İçerik Bölümü -->
+    <div class="content-section mt-4">
+        <!-- Müşteri Bilgileri Başlığı -->
+        <h5 class="border-bottom pb-2 ">Easy Cash <span class="fs-3"> Havale İşlemleri - Döviz Cinsi:  @ViewBag.currency</span></h5>
+        @* <hr> *@
+        <p>Lütfen havale göndermek istediğiniz kişinin bilgilerini eksiksiz giriniz.</p>
+        <h3>Hesap Bilgileri</h3>
+        <!-- Kullanıcı Bilgileri Formu -->
+
+        <div class="container d-flex justify-content-center align-items-center ">
+            <div class="col-md-6">
+                <form method="post" class="mt-3 p-4 border rounded shadow bg-light">
+                    <div class="mb-3">
+                        <label class="form-label">Hesap Numarası <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" asp-for="ReceiverAccountNumber" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Miktar <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" asp-for="Amount" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Açıklama <span class="text-danger">*</span></label>
+                        <textarea rows="5" class="form-control" asp-for="Description" required></textarea>
+                    </div>
+                    <div class="mt-3 d-flex">
+                        <button type="reset" class="btn btn-danger w-50 me-2">Vazgeç</button>
+                        <button type="submit" class="btn btn-success w-50">Para Gönder</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
